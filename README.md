@@ -65,12 +65,6 @@ function CreateUser(req, res) {
 
     //Create user
     const user = new User(firstName, lastName, email, password);
-
-    //Save user
-    user.save()
-        .then(() => res.status(201).json({ message: 'User created'})
-        .catch(error => res.status(400).json({error})
-    ));
 }
 ```
 
