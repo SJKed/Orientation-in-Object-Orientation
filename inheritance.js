@@ -1,14 +1,26 @@
 class Person {
-    constructor(name, adress) {
-        this.name = name;
-        this.adress = adress;
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    introduceSelf() {
+        console.log(`Hi, I'm ${this.firstName} ${this.lastName}`);
     }
 }
 
-class Employee extends Person {
-    constructor(name, adress) { //Inherit the properties of the Person class
-        super(name, adress); //Call the super class constructor
+class Professor extends Person {
+    constructor(firstName, lastName, teaches) { //Inherit the properties of the Person class
+        super(firstName, lastName); //Call the parent constructor
+        this.teaches = teaches;
     }
 
-    //logic unique to Employee
+    introduceSelf() {
+        console.log(`Hi, I'm ${this.firstName} ${this.lastName} and I teach ${this.teaches}`);
+    }
+
+    grade(paper) {
+        const grade = Math.random() * 5;
+        console.log(grade);
+    }
 }
