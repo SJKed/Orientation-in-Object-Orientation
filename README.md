@@ -86,11 +86,11 @@ class Person {
     }
 
     introduceSelf() {
-        console.log('Hi, I'm ${this.firstName} ${this.lastName}');
+        console.log(`Hi, I'm ${this.firstName} ${this.lastName}`);
     }
 }
 ```
-We're also creating a function that all objects with the class Person can take advantage of. *introduceSelf()*. 
+We're also creating a function that all objects with the class Person can take advantage of *introduceSelf()*. 
 Next off we're creating a class called Professor, which with the keyword "Extends" we can *extend* into the Person class. Inheriting its functionality, namely its constructor and methods associated with it.
 ```
 class Professor extends Person {
@@ -100,7 +100,7 @@ class Professor extends Person {
     }
 
     introduceSelf() {
-        console.log('Hi, I'm ${this.firstName} ${this.lastName} and I teach ${this.teaches}');
+        console.log(`Hi, I'm ${this.firstName} ${this.lastName} and I teach ${this.teaches}`);
     }
 
     grade(paper) {
