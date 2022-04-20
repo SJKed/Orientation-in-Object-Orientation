@@ -72,3 +72,44 @@ function CreateUser(req, res) {
         .catch(error => res.status(400).json({error})
     ));
 }
+
+## Inheritance
+Inheritance is a way to reuse code from a parent class in a child class.
+Let's study the [inheritance.js](inheritance.js) file to see how it works.
+By using the person class we can declare some basic information that all persons will have. In this instance, firstName and lastName. 
+```
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    introduceSelf() {
+        console.log(`Hi, I'm ${this.firstName} ${this.lastName}`);
+    }
+}
+```
+We're also creating a function that all objects with the class Person can take advantage of. *introduceSelf()*. 
+Next off we're creating a class called Professor, which with the keyword "Extends" we can *extend* into the Person class. Inheriting its functionality, namely its constructor and methods associated with it.
+```
+class Professor extends Person {
+    constructor(firstName, lastName, teaches) { //Inherit the properties of the Person class
+        super(firstName, lastName); //Call the parent constructor
+        this.teaches = teaches;
+    }
+
+    introduceSelf() {
+        console.log(`Hi, I'm ${this.firstName} ${this.lastName} and I teach ${this.teaches}`);
+    }
+
+    grade(paper) {
+        const grade = Math.random() * 5;
+        console.log(grade);
+    }
+}
+```
+By using the syntax "super" we are declaring the classes "super" constructor, a better word for this would be "parent", if i were to have created this language myself. In either case the super constructor is used to inherit properties of its parent. Proceeding that we continue delcaring new properties as we wish, in this case, only one, "teaches".
+
+As you can see we've also redeclared the introduceSelf() function. Doing this **overwrites** the function that it **would have had** from its parent when it extended onto it. Had we not redeclared and changed the function, it would have simply did whatever the parents function did. 
+
+We have also added a new function to the professor class, **grade(paper)**. Which only the professor can use. 
