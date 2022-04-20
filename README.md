@@ -72,6 +72,7 @@ function CreateUser(req, res) {
         .catch(error => res.status(400).json({error})
     ));
 }
+```
 
 ## Inheritance
 Inheritance is a way to reuse code from a parent class in a child class.
