@@ -85,7 +85,7 @@ class Person {
     }
 
     introduceSelf() {
-        console.log(`Hi, I'm ${this.firstName} ${this.lastName}`);
+        console.log('Hi, I'm ${this.firstName} ${this.lastName}');
     }
 }
 ```
