@@ -110,7 +110,12 @@ As you can see we've also redeclared the introduceSelf() function. Doing this **
 We have also added a new function to the professor class, **grade(paper)**. Which only the professor can use. 
 
 
-### Sources
+##Epilogue
+Further usecases of OOP can be found in [cardGame.js](cardGame.js) and [product.js](product.js).
+This repository as all prior informatory repositories on my profile are a work in progress and may/may not be up to date, and are all subject to change in the future as i continue to learn more. More repositories like this one can be found on my profile [here](https://github.com/SJKed)
+
+
+## Sources
 * [David Lundholm](https://github.com/zocom-david-lundholm) Educator and Mentor
 * [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript) Official documentation
 * [W3](https://www.w3schools.com/php/php_oop_what_is.asp) Official documentation
