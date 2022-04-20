@@ -111,6 +111,6 @@ We have also added a new function to the professor class, **grade(paper)**. Whic
 
 
 ### Sources
-* [David Lundholm](https://github.com/zocom-david-lundholm)
-* [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
-* [W3](https://www.w3schools.com/php/php_oop_what_is.asp)
+* [David Lundholm](https://github.com/zocom-david-lundholm) Educator and Mentor
+* [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript) Official documentation
+* [W3](https://www.w3schools.com/php/php_oop_what_is.asp) Official documentation
