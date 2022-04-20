@@ -15,6 +15,8 @@ The principles of OOP are an effort to increase reusability of code, make it eas
 * Inheritance - The idea of inheritance is to reuse the code of a parent class in a child class.
 * Polymorphism - The idea of polymorphism is to allow a class to have multiple forms.
 
+
+## Example of a Class
 Following, we will take a look at some basic structure, as well as surface level implementation of OOP.
 Taking a look at [user.js](user.js) we can extrapolate som key information about the structure of which we are going to be using. Starting off on the first 10 lines of code:
 ```
