@@ -99,7 +99,7 @@ class Professor extends Person {
     }
 
     introduceSelf() {
-        console.log(`Hi, I'm ${this.firstName} ${this.lastName} and I teach ${this.teaches}`);
+        console.log('Hi, I'm ${this.firstName} ${this.lastName} and I teach ${this.teaches}');
     }
 
     grade(paper) {
