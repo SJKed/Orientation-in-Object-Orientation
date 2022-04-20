@@ -108,3 +108,9 @@ By using the syntax "super" we are declaring the classes "super" constructor, a 
 As you can see we've also redeclared the introduceSelf() function. Doing this **overwrites** the function that it **would have had** from its parent when it extended onto it. Had we not redeclared and changed the function, it would have simply did whatever the parents function did. 
 
 We have also added a new function to the professor class, **grade(paper)**. Which only the professor can use. 
+
+
+### Sources
+* [David Lundholm](https://github.com/zocom-david-lundholm)
+* [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+* [W3](https://www.w3schools.com/php/php_oop_what_is.asp)
